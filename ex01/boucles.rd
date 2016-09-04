@@ -1,9 +1,16 @@
-utilisateurs = [
-"alice", "bob", "John","do" ]
+jours_ouvres = [
+	"lundi", "mardi", "mercredi", "jeudi", "vendredi"
+]
 
-i = 0
-utilisateurs.each do |utilisateur|
-	puts i
-	i = i + 1
-	puts utilisateur
+i=5
+
+jours_ouvres.each do |jour|
+	if jour == "vendredi"
+		puts jour + " : bon weekend!"
+	elsif jour == "lundi"
+		puts jour + " : bon courage!"
+	else
+		puts jour + " : weekend dans #{i} jours !"
+	end
+	i-=1
 end
